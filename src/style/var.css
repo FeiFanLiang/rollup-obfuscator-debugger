@@ -1,0 +1,218 @@
+
+
+:root {
+    --panel_header_height: 72px;
+    --panel_header_button_width: 72px;
+    --buttons_border_radius: 18px;
+    --block_border_radius: 18px;
+    --avatar_border_radius: 50%;
+    --input_padding: 18px;
+    --input_border_radius: 18px;
+    --select_option_list_border_radius: 0 0 12px 12px;
+    --text_font: "Inter";
+    --danger-color:#d03050;
+    --danger-buttin-color:rgba(208, 48, 80, 0.16);
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.i-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.hint-text {
+    color: var(--tg-theme-hint-color);
+}
+.btn {
+    display: inline-flex;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: bold;
+    padding: 12px 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.btn-block {
+    width: 100%;
+}
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:focus:active {
+    box-shadow: none;
+    outline: none;
+}
+.btn-primary {
+    color: var(--tg-theme-button-text-color);
+    background-color: var(--tg-theme-button-color);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    color: var(--tg-theme-button-text-color);
+    background-color: var(--tg-theme-button-color);
+}
+.btn-primary[disabled] {
+    color: var(--tg-theme-hint-color);
+    background-color: var(--tg-theme-button-color);
+    opacity: 1;
+}
+.btn-default {
+    color: var(--btn-default-color);
+    background-color: var(--tg-theme-button-color);
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    color: var(--btn-default-color);
+    background-color: var(--btn-default-bg-hover-color);
+}
+
+.yc-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes headShake {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    6.5% {
+        -webkit-transform: translateX(-6px) rotateY(-9deg);
+        transform: translateX(-6px) rotateY(-9deg);
+    }
+
+    18.5% {
+        -webkit-transform: translateX(5px) rotateY(7deg);
+        transform: translateX(5px) rotateY(7deg);
+    }
+
+    31.5% {
+        -webkit-transform: translateX(-3px) rotateY(-5deg);
+        transform: translateX(-3px) rotateY(-5deg);
+    }
+
+    43.5% {
+        -webkit-transform: translateX(2px) rotateY(3deg);
+        transform: translateX(2px) rotateY(3deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.headShake {
+    animation: headShake ease-in-out 1s;
+}
+
+.fade-enter-active {
+    transition: all 0.3s ease-in-out;
+}
+.fade-enter-from {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.fade-op-enter-active {
+    transition: opacity 0.3s ease-in-out;
+}
+.fade-op-enter-from {
+    opacity: 0;
+}
+
+.ellipsis-line {
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    20% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    40% {
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+  
+    80% {
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes bounceOut {
+    20% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+  
+    50%,
+    55% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    to {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  }

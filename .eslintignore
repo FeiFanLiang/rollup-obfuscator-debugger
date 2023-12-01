@@ -1,0 +1,8 @@
+*.yaml
+*.yml
+*.json
+*.svg
+*.js
+vite.config.ts
+auto-imports.d.ts
+components.d.ts
